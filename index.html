@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Magnitudes Físicas</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="Calculadora">
+    <h2>Calculadora Física </h2>
+    <h2>Juan Ospino</h2>
+    <div class="input-group">
+      <label for="formula">Selecciona una fórmula:</label>
+      <select id="formula">
+        <option value="v">Velocidad (v = d / t)</option>
+        <option value="a">Aceleración (a = Δv / Δt)</option>
+        <option value="fuerza">Fuerza (F = m · a)</option>
+        <option value="trabajo">Trabajo (W = F · d · cos(θ))</option>
+        <option value="energiaCin">Energía Cinética (K = ½ · m · v²)</option>
+        <option value="energiaPot">Energía Potencial (U = m · g · h)</option>
+        <option value="densidad">Densidad (ρ = m / V)</option>
+        <option value="presion">Presión (P = F / A)</option>
+        <option value="carga">Carga Eléctrica (q = I · t)</option>
+        <option value="ohm">Ley de Ohm (V = I · R)</option>
+      </select>
+    </div>
+
+    <div id="inputs"></div>
+
+    <button class="btn" onclick="calcular()">Calcular</button>
+
+    <div id="resultado" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
